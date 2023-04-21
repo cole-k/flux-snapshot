@@ -37,10 +37,8 @@ There are some additional options too.
 
 | Flag | Argument | Description |
 | ---- | -------- | ----------- |
-| `-d`, `--dir` | Path | The path to run `flux-snapshot` in (defaults to current
-directory) |
-| `-m`, `--message` | String | The message to put in the commit created by
-`flux-snapshot` (if not given, uses a default message) |
+| `-d`, `--dir` | Path | The path to run `flux-snapshot` in (defaults to current directory) |
+| `-m`, `--message` | String | The message to put in the commit created by `flux-snapshot` (if not given, uses a default message) |
 |`--rustc` | None | Run `rustc-flux` instead of `cargo-flux` |
 
 ## Output buffering
