@@ -16,4 +16,4 @@ Windows and Linux support is untested, though Linux is presumed to work.
 
 ## Installation
 
-Copy or link `flux-snapshot` to your path.
+Add `flux-snapshot` to your path.
