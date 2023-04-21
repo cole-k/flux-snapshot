@@ -17,3 +17,34 @@ Windows and Linux support is untested, though Linux is presumed to work.
 ## Installation
 
 Add `flux-snapshot` to your path.
+
+## Usage
+
+By default, `flux-snapshot` will act as a wrapper around `cargo-flux`. So
+for example, instead of using
+
+```bash
+cargo-flux check
+```
+
+you can use
+
+```bash
+flux-snapshot check
+```
+
+There are some additional options too.
+
+| Flag | Argument | Description |
+| ---- | -------- | ----------- |
+| `-d`, `--dir` | Path | The path to run `flux-snapshot` in (defaults to current
+directory) |
+| `-m`, `--message` | String | The message to put in the commit created by
+`flux-snapshot` (if not given, uses a default message) |
+|`--rustc` | None | Run `rustc-flux` instead of `cargo-flux` |
+
+## Output buffering
+
+Right now `flux-snapshot` hangs until the `flux` subprocess finishes outputting
+before it reflects that output. I'm sure there's a way to get it to
+tee its output properly but I'm not bothered enough to fix it.
